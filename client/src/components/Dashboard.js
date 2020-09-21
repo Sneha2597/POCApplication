@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import jwt_decode from "jwt-decode";
 
-class Profile extends Component {
+class Dashboard extends Component {
   constructor() {
     super();
 
@@ -40,4 +40,4 @@ class Profile extends Component {
   }
 }
 
-export default Profile;
+export default Dashboard;
