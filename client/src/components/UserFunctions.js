@@ -33,3 +33,29 @@ export const login = (user) => {
       console.log(err);
     });
 };
+
+export const getProfile = user => {
+
+  return axios
+
+    .get('users/dashboard', {
+
+      //headers: { Authorization: ` ${this.getToken()}` }
+
+    })
+
+    .then(response => {
+
+      console.log(response)
+
+      return response.data
+
+    })
+
+    .catch(err => {
+
+      console.log(err)
+
+    })
+
+}
